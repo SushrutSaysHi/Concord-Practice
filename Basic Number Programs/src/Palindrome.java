@@ -6,16 +6,18 @@ public class Palindrome {
 
         System.out.print("Enter a number: ");
         int number = sc.nextInt();
-        int n_copy=number;
-        int reverse=0;
-        while (number>0) {
-            int d1=number%10;
-            number/=10;
-            reverse=reverse*10+d1;
+        int n_copy = number;
+        int reverse = 0;
+        while (number > 0) {
+            int d1 = number % 10;
+            number /= 10;
+            reverse = reverse * 10 + d1;
         }
 
-        if(reverse==n_copy){
+        if (reverse == n_copy) {
             System.out.println("Palindrome Number");
         }
+
+        sc.close();
     }
 }

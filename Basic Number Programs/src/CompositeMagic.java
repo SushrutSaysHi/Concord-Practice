@@ -31,6 +31,7 @@ public class CompositeMagic {
         } else {
             System.out.println("Lower limit must be lesser than upper limit");
         }
+        sc.close();
     }
 
     public static boolean isPrime(int n) {
